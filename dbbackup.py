@@ -30,7 +30,7 @@ from subprocess import Popen, PIPE
 # $ /path/to/dbbackup.py /path/to/databases.json
 db_list = []
 try:
-    json_file = open(pipes.quote(sys.argv[1]))
+    json_file = open(os.path.normpath(sys.argv[1]))
     db_list = json.load(json_file)
 except Exception as e:
     sys.stderr.write("Error reading file: " + sys.argv[1] + "\n")
