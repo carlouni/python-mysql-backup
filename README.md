@@ -1,7 +1,7 @@
 ### Python MySQL Backup
 ---
 
-A python script to create MySQL backups using <b>mysqldump</b>, <b>mysql_config_editor</b>, and <b>tar</b> utility. The original version was taken from http://tecadmin.net by Rahul Kumar but I have added major changes since.
+A python script to create MySQL backups using <b>mysqldump</b>, <b>mysql_config_editor</b>, and <b>tar</b> utility. The original version was taken from http://tecadmin.net/python-script-for-mysql-database-backup/ by Rahul Kumar but I have added major changes since.
 
 #### Requirements:
 1. <b>Python 2.7</b>
