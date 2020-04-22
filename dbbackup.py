@@ -28,6 +28,10 @@ from subprocess import Popen, PIPE
 # Examples:
 # $ python /path/to/dbbackup.py /path/to/databases.json
 # $ /path/to/dbbackup.py /path/to/databases.json
+if len(sys.argv) < 2:
+    sys.stderr.write(".json file containing the BD list not provided.\n")
+    sys.exit(1)
+
 db_list = []
 try:
     json_file = open(os.path.normpath(sys.argv[1]))
@@ -82,4 +86,9 @@ for db in db_list:
 print("Backup results:")
 print("--------------")
 for result in result_list:
-    print '{0:20} ==> {1:10}'.format(result["db"], result["result"])
+    if result["result"] == "Succeeded":
+        sys.stdout.write("\033[92m")
+    else:
+        sys.stdout.write("\033[91m")
+    print('{0:20} ==> {1:10}'.format(result["db"], result["result"]))
+sys.stdout.write("\033[0m")

@@ -13,7 +13,7 @@ Passing passwords within the command line is a bad practice. <b>mysql_config_edi
 - <b>Windows:</b> It's also included in the "MySQL Product Archives"
 - <b>Linux:</b> It's part of the MySQL Client tools
 4. <b>tar</b>
-The <b>tar</b> utility for Windows can be downloaded from http://gnuwin32.sourceforge.net/packages/gtar.htm
+Any Windows 10 after build 17063 come with tar by default. For older versions, you can download it from http://gnuwin32.sourceforge.net/packages/gtar.htm
 
 #### Steps:
 ##### Define login paths with mysql_config_editor
