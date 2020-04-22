@@ -23,7 +23,7 @@ import json
 import sys
 from subprocess import Popen, PIPE
 
-# MySQL database details to which backup to be done. Make sure below user having enough privileges to take databases backup.
+# MySQL database details to which backup to be done.
 # Pass the path of the file containing the list of DBs in JSON format
 # Examples:
 # $ python /path/to/dbbackup.py /path/to/databases.json
@@ -44,7 +44,7 @@ result_list =[]
 for db in db_list:
     today_bkp_path = db["bkpPath"] + DATETIME
 
-    # Checking if backup folder already exists or not. If not exists will create it.
+    # Checking if backup folder already exists. If it doesn't, exist, it will create it.
     try:
         os.stat(pipes.quote(today_bkp_path))
     except:
