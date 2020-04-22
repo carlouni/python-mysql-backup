@@ -16,7 +16,7 @@ Passing passwords within the command line is a bad practice. <b>mysql_config_edi
 The <b>tar</b> utility for Windows can be downloaded from http://gnuwin32.sourceforge.net/packages/gtar.htm
 
 #### Steps:
-###### Define login paths with mysql_config_editor
+##### Define login paths with mysql_config_editor
 From command line execute the following.
 ```
 shell> mysql_config_editor set --login-path=loginpath1
@@ -38,7 +38,7 @@ password = *****
 host = yourdbhost2
 ```
 
-###### JSON File
+##### JSON File
 Create a file containing a list of DBs to be backed up. The DB list must be in JSON format. See example below.
 ```javascript
 [
@@ -54,7 +54,7 @@ Create a file containing a list of DBs to be backed up. The DB list must be in J
     }
 ]
 ```
-###### Running the script (dbbackup.py)
+##### Running the script (dbbackup.py)
 Execute the following:
 ```
 shell> /path/to/dbbackup.py /path/to/your_database_list.json
