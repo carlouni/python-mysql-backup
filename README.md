@@ -23,7 +23,7 @@ shell> mysql_config_editor set --login-path=loginpath1
          --host=yourdbhost1 --user=dbuser1 --password
 Enter password: enter password "dbpass1" here
 ```
-This will store your authentication in .mylogin.cnf for future use. Repete previous steps for every DB you want to include in your back up.
+This will store your authentication in .mylogin.cnf for future use. Repeat previous steps for every DB you want to include in your back up.
 
 To check your login paths execute the following. These login paths will be used in your JSON file.
 ```
